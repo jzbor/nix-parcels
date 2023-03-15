@@ -2,13 +2,13 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "foliot";
-  version = "0.2.1";
+  version = "0.3.0";
 
   src = fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = version;
-    sha256 = "sha256-4Pv9CqgD6vGoZw0gwMgNhi6m7zVjON7HUiUObJ42CSU=";
+    sha256 = "sha256-mHcEEpoDyM2MHLuhjnmdDyRwsGNPj8ar1bMXa890KAk=";
   };
 
   cargoLock = {
