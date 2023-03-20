@@ -1,7 +1,7 @@
 self: super:
 
 {
-  foliot = super.callPackage (
+  buttermilk = super.callPackage (
     { pkgs, lib, stdenv, fetchFromGitHub }:
 
     stdenv.mkDerivation rec {
