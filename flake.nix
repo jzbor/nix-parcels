@@ -18,6 +18,15 @@
       };
   }) // {
     # Default overlay
-    overlay = import ./default.nix;
+    overlays.default = import ./default.nix;
+
+    overlays = {
+      adi1090x-plymouth = import ./overlays/adi1090x-plymouth;
+      buttermilk = import ./overlays/buttermilk;
+      foliot = import ./overlays/foliot;
+      marswm = import ./overlays/marswm;
+      nextcloud-client = import ./overlays/nextcloud-client;
+      pademelon = import ./overlays/pademelon;
+    };
   };
 }
