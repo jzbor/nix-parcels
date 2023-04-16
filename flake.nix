@@ -1,7 +1,7 @@
 {
   description = "jzbor's personal overlay";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "nixpkgs";
     utils.url = "github:numtide/flake-utils";
   };
 
