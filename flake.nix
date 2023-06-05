@@ -23,6 +23,7 @@
     overlays = {
       adi1090x-plymouth = import ./overlays/adi1090x-plymouth;
       buttermilk = import ./overlays/buttermilk;
+      chordpro = import ./overlays/chordpro;
       foliot = import ./overlays/foliot;
       marswm = import ./overlays/marswm;
       nextcloud-client = import ./overlays/nextcloud-client;
