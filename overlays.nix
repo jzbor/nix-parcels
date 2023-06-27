@@ -4,6 +4,6 @@
   ./overlays/chordpro
   ./overlays/foliot
   ./overlays/marswm
-  ./overlays/nextcloud-client
+  # ./overlays/nextcloud-client
   ./overlays/pademelon
 ]
