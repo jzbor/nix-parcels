@@ -23,7 +23,10 @@ self: super:
         mkdir -p $out/share/icons/
         mkdir -p $out/share/themes/
         cp -r icons/Kanagawa $out/share/icons/
+        cp -r themes/Kanagawa-B $out/share/themes/
+        cp -r themes/Kanagawa-B-LB $out/share/themes/
         cp -r themes/Kanagawa-BL $out/share/themes/
+        cp -r themes/Kanagawa-BL-LB $out/share/themes/
         rm -r *
       '';
 
