@@ -25,6 +25,7 @@
       buttermilk = import ./overlays/buttermilk;
       chordpro = import ./overlays/chordpro;
       foliot = import ./overlays/foliot;
+      kanagawa-gtk-theme = import ./overlays/kanagawa-gtk-theme;
       marswm = import ./overlays/marswm;
       nextcloud-client = import ./overlays/nextcloud-client;
       pademelon = import ./overlays/pademelon;
