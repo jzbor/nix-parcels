@@ -11,8 +11,8 @@ self: super:
       src = fetchFromGitHub {
         owner = "Fausto-Korpsvart";
         repo = "Kanagawa-GKT-Theme";
-        rev = "7b8ece4382533491e82f9b3d5552607f67a79999";
-        sha256 = "sha256-Jtu04SKXk0wFRvx2Duz0YxHEWJ2sM8ZIT+dtdJqKykY=";
+        rev = "35936a1e3bbd329339991b29725fc1f67f192c1e";
+        sha256 = "sha256-BZRmjVas8q6zsYbXFk4bCk5Ec/3liy9PQ8fqFGHAXe0=";
       };
 
       dontPatchELF = true;
