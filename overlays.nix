@@ -8,4 +8,5 @@
   ./overlays/marswm
   # ./overlays/nextcloud-client
   ./overlays/pademelon
+  ./overlays/raw-to-img
 ]

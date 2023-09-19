@@ -30,6 +30,7 @@
       marswm = import ./overlays/marswm;
       nextcloud-client = import ./overlays/nextcloud-client;
       pademelon = import ./overlays/pademelon;
+      raw-to-img = import ./overlays/raw-to-img;
     };
   };
 }
