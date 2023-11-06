@@ -6,13 +6,13 @@ self: super:
 
     rustPlatform.buildRustPackage rec {
       pname = "foliot";
-      version = "0.3.2";
+      version = "0.3.3";
 
       src = fetchFromGitHub {
         owner = "jzbor";
         repo = pname;
         rev = version;
-        sha256 = "sha256-qx4/CTEF8J+bF67aJUTPFKV7PPJ6PtgcHOsoJ5o7px0=";
+        sha256 = "sha256-xsL8DObP4Kz+VPZi+0us+dkHyNQG919wjkrexZCHAR0=";
       };
 
       cargoLock = {
