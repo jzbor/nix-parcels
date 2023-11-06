@@ -6,13 +6,13 @@ self: super:
 
     rustPlatform.buildRustPackage rec {
       pname = "marswm";
-      version = "0.5.0";
+      version = "0.5.1";
 
       src = fetchFromGitHub {
         owner = "jzbor";
         repo = pname;
-        rev = "146501f455cd28165f1c5514f7b1a3f30fc128af";
-        sha256 = "sha256-1hV7lDTmHDrE7giiYRwegb228kNBU1HMAJtgX3SYoyo=";
+        rev = version;
+        sha256 = "sha256-l2+ESZ5veY4rgXDYHEcoVdT9G9eLagu08etO4GYcQZw=";
       };
 
       cargoLock = {
