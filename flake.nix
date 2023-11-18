@@ -24,9 +24,10 @@
       adi1090x-plymouth = import ./overlays/adi1090x-plymouth;
       buttermilk = import ./overlays/buttermilk;
       chordpro = import ./overlays/chordpro;
-      foliot = import ./overlays/foliot;
-      kanagawa-gtk-theme = import ./overlays/kanagawa-gtk-theme;
       everforest-gtk-theme = import ./overlays/everforest-gtk-theme;
+      foliot = import ./overlays/foliot;
+      goatcounter = import ./overlays/goatcounget;
+      kanagawa-gtk-theme = import ./overlays/kanagawa-gtk-theme;
       marswm = import ./overlays/marswm;
       nextcloud-client = import ./overlays/nextcloud-client;
       pademelon = import ./overlays/pademelon;
