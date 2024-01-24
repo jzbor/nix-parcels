@@ -28,6 +28,7 @@
       foliot = import ./overlays/foliot;
       goatcounter = import ./overlays/goatcounget;
       kanagawa-gtk-theme = import ./overlays/kanagawa-gtk-theme;
+      lisho = import ./overlays/lisho;
       marswm = import ./overlays/marswm;
       nextcloud-client = import ./overlays/nextcloud-client;
       pademelon = import ./overlays/pademelon;

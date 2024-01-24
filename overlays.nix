@@ -6,6 +6,7 @@
   ./overlays/foliot
   ./overlays/goatcounter
   ./overlays/kanagawa-gtk-theme
+  ./overlays/lisho
   ./overlays/marswm
   # ./overlays/nextcloud-client
   ./overlays/pademelon
