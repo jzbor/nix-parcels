@@ -6,13 +6,13 @@ self: super:
 
     rustPlatform.buildRustPackage rec {
       pname = "lisho";
-      version = "0.1.1";
+      version = "0.1.2";
 
       src = fetchFromGitHub {
         owner = "jzbor";
         repo = pname;
         rev = "v${version}";
-        sha256 = "sha256-L5AitfbwnrvkAbVSaJGv3ZWzAS8CKisVEDnjuIXG70g=";
+        sha256 = "sha256-px41qID2n2q5qble5DuvA+xFCo7ievxnoz1OWZZtd7k=";
       };
 
       cargoLock = {
