@@ -26,7 +26,7 @@
       chordpro = import ./overlays/chordpro;
       everforest-gtk-theme = import ./overlays/everforest-gtk-theme;
       foliot = import ./overlays/foliot;
-      goatcounter = import ./overlays/goatcounget;
+      goatcounter = import ./overlays/goatcounter;
       kanagawa-gtk-theme = import ./overlays/kanagawa-gtk-theme;
       lisho = import ./overlays/lisho;
       marswm = import ./overlays/marswm;
