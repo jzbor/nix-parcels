@@ -9,6 +9,7 @@
   ./overlays/lisho
   ./overlays/marswm
   # ./overlays/nextcloud-client
+  ./overlays/obligator
   ./overlays/pademelon
   ./overlays/raw-to-img
 ]

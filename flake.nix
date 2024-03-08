@@ -33,6 +33,7 @@
       nextcloud-client = import ./overlays/nextcloud-client;
       pademelon = import ./overlays/pademelon;
       raw-to-img = import ./overlays/raw-to-img;
+      obligator = import ./overlays/obligator;
     };
   };
 }
