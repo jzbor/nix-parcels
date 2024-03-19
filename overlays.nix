@@ -7,7 +7,6 @@
   ./overlays/goatcounter
   ./overlays/kanagawa-gtk-theme
   ./overlays/lisho
-  ./overlays/marswm
   # ./overlays/nextcloud-client
   ./overlays/obligator
   ./overlays/pademelon

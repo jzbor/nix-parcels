@@ -29,7 +29,6 @@
       goatcounter = import ./overlays/goatcounter;
       kanagawa-gtk-theme = import ./overlays/kanagawa-gtk-theme;
       lisho = import ./overlays/lisho;
-      marswm = import ./overlays/marswm;
       nextcloud-client = import ./overlays/nextcloud-client;
       pademelon = import ./overlays/pademelon;
       raw-to-img = import ./overlays/raw-to-img;
