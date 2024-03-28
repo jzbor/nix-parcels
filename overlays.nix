@@ -11,4 +11,5 @@
   ./overlays/obligator
   ./overlays/pademelon
   ./overlays/raw-to-img
+  ./overlays/rapl-read
 ]
