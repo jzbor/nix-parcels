@@ -2,6 +2,7 @@
   ./overlays/adi1090x-plymouth
   ./overlays/buttermilk
   ./overlays/chordpro
+  ./overlays/cliflux
   ./overlays/everforest-gtk-theme
   ./overlays/foliot
   ./overlays/goatcounter

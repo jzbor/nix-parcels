@@ -24,6 +24,7 @@
       adi1090x-plymouth = import ./overlays/adi1090x-plymouth;
       buttermilk = import ./overlays/buttermilk;
       chordpro = import ./overlays/chordpro;
+      cliflux = import ./overlays/cliflux;
       everforest-gtk-theme = import ./overlays/everforest-gtk-theme;
       foliot = import ./overlays/foliot;
       goatcounter = import ./overlays/goatcounter;
