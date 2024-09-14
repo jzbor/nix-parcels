@@ -3,6 +3,7 @@
   ./overlays/buttermilk
   ./overlays/chordpro
   ./overlays/cliflux
+  ./overlays/erth-exporter
   ./overlays/everforest-gtk-theme
   ./overlays/foliot
   ./overlays/goatcounter

@@ -25,6 +25,7 @@
       buttermilk = import ./overlays/buttermilk;
       chordpro = import ./overlays/chordpro;
       cliflux = import ./overlays/cliflux;
+      erth-exporter = import ./overlays/erth-exporter;
       everforest-gtk-theme = import ./overlays/everforest-gtk-theme;
       foliot = import ./overlays/foliot;
       goatcounter = import ./overlays/goatcounter;
