@@ -6,13 +6,13 @@ self: super:
 
     rustPlatform.buildRustPackage rec {
       pname = "erth-exporter";
-      version = "0.3.0";
+      version = "0.3.1";
 
       src = fetchFromGitHub {
         owner = "jzbor";
         repo = pname;
         rev = "v${version}";
-        sha256 = "sha256-affZ18mFDqTnRMxsI5Cu+Xu/hkhbQqldvKP6vvMX9S4=";
+        sha256 = "sha256-DbG9Lr9/ZdJMbn7EuOV5chW3FcRoQ4PY3awxBXriU5Y=";
       };
 
       cargoLock = {
