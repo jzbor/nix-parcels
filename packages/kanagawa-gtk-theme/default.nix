@@ -27,8 +27,8 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
+    inherit (src.meta) homepage;
     description = "A GTK theme with the Kanagawa colour palette";
-    homepage = src.meta.homepage;
     license = licenses.gpl3Only;
     platforms = platforms.all;
   };

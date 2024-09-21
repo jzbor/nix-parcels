@@ -1,5 +1,5 @@
 pkgs: {
-  adi1090x-plymouth = pkgs.callPackage ./adi1090-plymouth {};
+  adi1090x-plymouth = pkgs.callPackage ./adi1090x-plymouth {};
   buttermilk = pkgs.callPackage ./buttermilk {};
   chordpro = pkgs.callPackage ./chordpro {};
   cliflux = pkgs.callPackage ./cliflux {};

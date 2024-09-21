@@ -16,24 +16,24 @@ stdenv.mkDerivation rec {
   dontDropIconThemeCache = true;
 
   installPhase = ''
-        mkdir -p $out/share/icons/
-        mkdir -p $out/share/themes/
-        cp -r icons/Everforest-Dark $out/share/icons/
-        cp -r icons/everforest_light $out/share/icons/
-        cp -r themes/Everforest-Dark-B-LB $out/share/themes/
-        cp -r themes/Everforest-Dark-B $out/share/themes/
-        cp -r themes/Everforest-Dark-BL-LB $out/share/themes/
-        cp -r themes/Everforest-Dark-BL $out/share/themes/
-        cp -r themes/Everforest-Light-B-LB $out/share/themes/
-        cp -r themes/Everforest-Light-B $out/share/themes/
-        cp -r themes/Everforest-Light-BL-LB $out/share/themes/
-        cp -r themes/Everforest-Light-BL $out/share/themes/
-        rm -r *
+    mkdir -p $out/share/icons/
+    mkdir -p $out/share/themes/
+    cp -r icons/Everforest-Dark $out/share/icons/
+    cp -r icons/everforest_light $out/share/icons/
+    cp -r themes/Everforest-Dark-B-LB $out/share/themes/
+    cp -r themes/Everforest-Dark-B $out/share/themes/
+    cp -r themes/Everforest-Dark-BL-LB $out/share/themes/
+    cp -r themes/Everforest-Dark-BL $out/share/themes/
+    cp -r themes/Everforest-Light-B-LB $out/share/themes/
+    cp -r themes/Everforest-Light-B $out/share/themes/
+    cp -r themes/Everforest-Light-BL-LB $out/share/themes/
+    cp -r themes/Everforest-Light-BL $out/share/themes/
+    rm -r *
   '';
 
   meta = with lib; {
+    inherit (src.meta) homepage;
     description = "Everforest colour palette for GTK";
-    homepage = src.meta.homepage;
     license = licenses.gpl3Only;
     platforms = platforms.all;
   };
