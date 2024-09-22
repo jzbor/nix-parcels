@@ -1,6 +1,6 @@
-{ pkgs, lib, rustPlatform, fetchFromGitHub, ...  }:
+{ pkgs, lib, craneLib, fetchFromGitHub, ...  }:
 
-rustPlatform.buildRustPackage rec {
+craneLib.buildPackage rec {
   pname = "cliflux";
   version = "1.4.2";
 
@@ -9,10 +9,6 @@ rustPlatform.buildRustPackage rec {
     repo = pname;
     rev = "v" + version;
     sha256 = "sha256-MkMOH1MANcUO7icY8ajSDJG7zvclUyYR13u8N2tgXyI=";
-  };
-
-  cargoLock = {
-    lockFile = "${src}/Cargo.lock";
   };
 
   nativeBuildInputs = with pkgs; [

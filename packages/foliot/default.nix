@@ -1,6 +1,6 @@
-{ pkgs, lib, rustPlatform, fetchFromGitHub, ... }:
+{ pkgs, lib, craneLib, fetchFromGitHub, ... }:
 
-rustPlatform.buildRustPackage rec {
+craneLib.buildPackage rec {
   pname = "foliot";
   version = "0.5.0";
 
@@ -9,10 +9,6 @@ rustPlatform.buildRustPackage rec {
     repo = pname;
     rev = version;
     sha256 = "sha256-ZQaC4XDgQg93HqYQa4Bh646JxurqM+3sxjcQHrfXNHI=";
-  };
-
-  cargoLock = {
-    lockFile = "${src}/Cargo.lock";
   };
 
   nativeBuildInputs = with pkgs; [

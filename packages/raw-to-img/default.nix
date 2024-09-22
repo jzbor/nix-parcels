@@ -1,6 +1,6 @@
-{ lib, rustPlatform, fetchFromGitHub, ... }:
+{ lib, craneLib, fetchFromGitHub, ... }:
 
-rustPlatform.buildRustPackage rec {
+craneLib.buildPackage rec {
   pname = "raw-to-img";
   version = "0.3.3";
 
@@ -9,10 +9,6 @@ rustPlatform.buildRustPackage rec {
     repo = pname;
     rev = version;
     sha256 = "sha256-3wGBwTO/ZuEoZ3U3VlEGzdUlIHrT6uLqO/AO5jljxgk=";
-  };
-
-  cargoLock = {
-    lockFile = "${src}/Cargo.lock";
   };
 
   meta = with lib; {

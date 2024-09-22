@@ -1,6 +1,6 @@
-{ lib, rustPlatform, fetchFromGitHub, ... }:
+{ lib, craneLib, fetchFromGitHub, ... }:
 
-rustPlatform.buildRustPackage rec {
+craneLib.buildPackage rec {
   pname = "erth-exporter";
   version = "0.3.2";
 
@@ -9,10 +9,6 @@ rustPlatform.buildRustPackage rec {
     repo = pname;
     rev = "v${version}";
     sha256 = "sha256-bXO0K57xt0Pik8yTYCIK8TAmheXOWgAM/ECWZ7d+SK8=";
-  };
-
-  cargoLock = {
-    lockFile = "${src}/Cargo.lock";
   };
 
   meta = with lib; {
