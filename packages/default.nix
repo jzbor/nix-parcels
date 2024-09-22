@@ -1,4 +1,12 @@
-pkgs: {
+inputs: pkgs:
+let
+  extraArgs = {
+    craneLib = inputs.crane.mkLib pkgs;
+    craneLibStatic = (inputs.crane.mkLib (pkgs.extend inputs.rust-overlay.overlays.default)).overrideToolchain (p: p.rust-bin.stable.latest.default.override {
+      targets = [ "x86_64-unknown-linux-musl" ];
+    });
+  };
+in {
   adi1090x-plymouth = pkgs.callPackage ./adi1090x-plymouth {};
   buttermilk = pkgs.callPackage ./buttermilk {};
   chordpro = pkgs.callPackage ./chordpro {};
@@ -14,6 +22,6 @@ pkgs: {
   pademelon = pkgs.callPackage ./pademelon {};
   rapl-read = pkgs.callPackage ./rapl-read {};
   raw-to-img = pkgs.callPackage ./raw-to-img {};
-  statix = pkgs.callPackage ./statix {};
+  statix-static = pkgs.callPackage ./statix-static extraArgs;
 }
 

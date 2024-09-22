@@ -1,6 +1,6 @@
-{ lib, rustPlatform, fetchFromGitHub }:
+{ lib, fetchFromGitHub, craneLibStatic, ... }:
 
-rustPlatform.buildRustPackage rec {
+craneLibStatic.buildPackage rec {
   pname = "statix";
   version = "0.5.8";
 
@@ -11,9 +11,8 @@ rustPlatform.buildRustPackage rec {
     sha256 = "sha256-bMs3XMiGP6sXCqdjna4xoV6CANOIWuISSzCaL5LYY4c=";
   };
 
-  cargoLock = {
-    lockFile = "${src}/Cargo.lock";
-  };
+  CARGO_BUILD_TARGET = "x86_64-unknown-linux-musl";
+  CARGO_BUILD_RUSTFLAGS = "-C target-feature=+crt-static";
 
   meta = with lib; {
     description = "lints and suggestions for the nix programming language";
