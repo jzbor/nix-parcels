@@ -11,6 +11,7 @@ in {
   buttermilk = pkgs.callPackage ./buttermilk {};
   chordpro = pkgs.callPackage ./chordpro {};
   cliflux = pkgs.callPackage ./cliflux {};
+  deadnix-static = pkgs.callPackage ./deadnix-static extraArgs;
   decap_oauth = pkgs.callPackage ./decap_oauth {};
   erth-exporter = pkgs.callPackage ./erth-exporter {};
   everforest-gtk-theme = pkgs.callPackage ./everforest-gtk-theme {};
