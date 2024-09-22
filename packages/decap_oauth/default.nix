@@ -1,4 +1,4 @@
-{ pkgs, lib, rustPlatform, fetchFromGitHub }:
+{ pkgs, lib, rustPlatform, fetchFromGitHub, ... }:
 
 rustPlatform.buildRustPackage rec {
   pname = "decap_oauth";

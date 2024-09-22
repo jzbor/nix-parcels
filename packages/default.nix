@@ -7,22 +7,22 @@ let
     });
   };
 in {
-  adi1090x-plymouth = pkgs.callPackage ./adi1090x-plymouth {};
-  buttermilk = pkgs.callPackage ./buttermilk {};
-  chordpro = pkgs.callPackage ./chordpro {};
-  cliflux = pkgs.callPackage ./cliflux {};
+  adi1090x-plymouth = pkgs.callPackage ./adi1090x-plymouth extraArgs;
+  buttermilk = pkgs.callPackage ./buttermilk extraArgs;
+  chordpro = pkgs.callPackage ./chordpro extraArgs;
+  cliflux = pkgs.callPackage ./cliflux extraArgs;
   deadnix-static = pkgs.callPackage ./deadnix-static extraArgs;
-  decap_oauth = pkgs.callPackage ./decap_oauth {};
-  erth-exporter = pkgs.callPackage ./erth-exporter {};
-  everforest-gtk-theme = pkgs.callPackage ./everforest-gtk-theme {};
-  foliot = pkgs.callPackage ./foliot {};
-  goatcounter = pkgs.callPackage ./goatcounter {};
-  kanagawa-gtk-theme = pkgs.callPackage ./kanagawa-gtk-theme {};
-  lisho = pkgs.callPackage ./lisho {};
-  obligator = pkgs.callPackage ./obligator {};
-  pademelon = pkgs.callPackage ./pademelon {};
-  rapl-read = pkgs.callPackage ./rapl-read {};
-  raw-to-img = pkgs.callPackage ./raw-to-img {};
+  decap_oauth = pkgs.callPackage ./decap_oauth extraArgs;
+  erth-exporter = pkgs.callPackage ./erth-exporter extraArgs;
+  everforest-gtk-theme = pkgs.callPackage ./everforest-gtk-theme extraArgs;
+  foliot = pkgs.callPackage ./foliot extraArgs;
+  goatcounter = pkgs.callPackage ./goatcounter extraArgs;
+  kanagawa-gtk-theme = pkgs.callPackage ./kanagawa-gtk-theme extraArgs;
+  lisho = pkgs.callPackage ./lisho extraArgs;
+  obligator = pkgs.callPackage ./obligator extraArgs;
+  pademelon = pkgs.callPackage ./pademelon extraArgs;
+  rapl-read = pkgs.callPackage ./rapl-read extraArgs;
+  raw-to-img = pkgs.callPackage ./raw-to-img extraArgs;
   statix-static = pkgs.callPackage ./statix-static extraArgs;
 }
 

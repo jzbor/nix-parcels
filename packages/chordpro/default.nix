@@ -1,4 +1,6 @@
-{ pkgs }: pkgs.perlPackages.buildPerlPackage {
+{ pkgs, ... }:
+
+pkgs.perlPackages.buildPerlPackage {
   pname = "App-Music-ChordPro";
   version = "6.010";
   src = pkgs.fetchurl {

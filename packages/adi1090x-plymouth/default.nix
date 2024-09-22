@@ -1,4 +1,4 @@
-{ pkgs, fetchFromGitHub }:
+{ pkgs, fetchFromGitHub, ... }:
 
 pkgs.stdenv.mkDerivation {
   pname = "adi1090x-plymouth";

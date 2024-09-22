@@ -1,5 +1,5 @@
 # source: https://github.com/connorfeeley/goatcounter-flake
-{ pkgs, lib, buildGoModule, fetchFromGitHub }:
+{ pkgs, lib, buildGoModule, fetchFromGitHub, ... }:
 
 buildGoModule rec {
   pname = "goatcounter";

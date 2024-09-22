@@ -1,5 +1,5 @@
 # source: https://github.com/connorfeeley/goatcounter-flake
-{ lib, buildGoModule, fetchFromGitHub }:
+{ lib, buildGoModule, fetchFromGitHub, ... }:
 
 buildGoModule {
   pname = "obligator";

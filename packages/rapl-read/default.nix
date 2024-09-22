@@ -1,4 +1,4 @@
-{ pkgs, lib, stdenv, fetchFromGitHub }:
+{ pkgs, lib, stdenv, fetchFromGitHub, ... }:
 
 stdenv.mkDerivation {
   pname = "rapl-read";

@@ -1,4 +1,4 @@
-{ lib, stdenv, fetchFromGitHub, pkgs, wrapGAppsHook, python3 }:
+{ lib, stdenv, fetchFromGitHub, pkgs, wrapGAppsHook, python3, ... }:
 
 stdenv.mkDerivation rec {
   pname = "pademelon";
