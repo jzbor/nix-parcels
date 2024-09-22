@@ -4,12 +4,12 @@ craneLib.buildPackage rec {
   pname = "foliot";
   version = "0.5.0";
 
-  src = fetchFromGitHub {
+  src = craneLib.cleanCargoSource (fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = version;
     sha256 = "sha256-ZQaC4XDgQg93HqYQa4Bh646JxurqM+3sxjcQHrfXNHI=";
-  };
+  });
 
   nativeBuildInputs = with pkgs; [
     pkg-config

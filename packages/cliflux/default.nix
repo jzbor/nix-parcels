@@ -4,12 +4,12 @@ craneLib.buildPackage rec {
   pname = "cliflux";
   version = "1.4.2";
 
-  src = fetchFromGitHub {
+  src = craneLib.cleanCargoSource (fetchFromGitHub {
     owner = "spencerwi";
     repo = pname;
     rev = "v" + version;
     sha256 = "sha256-MkMOH1MANcUO7icY8ajSDJG7zvclUyYR13u8N2tgXyI=";
-  };
+  });
 
   nativeBuildInputs = with pkgs; [
     pkg-config

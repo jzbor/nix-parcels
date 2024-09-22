@@ -4,12 +4,12 @@ craneLib.buildPackage rec {
   pname = "lisho";
   version = "0.1.4";
 
-  src = fetchFromGitHub {
+  src = craneLib.cleanCargoSource (fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = "v${version}";
     sha256 = "sha256-3wR/3ggh3TkTcRCPj8dvJsVhrEa6KzzHKvdBhQFBiBQ=";
-  };
+  });
 
   meta = with lib; {
     description = "A simple personal link shortener with no external dependencies.";
