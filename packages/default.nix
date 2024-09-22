@@ -14,5 +14,6 @@ pkgs: {
   pademelon = pkgs.callPackage ./pademelon {};
   rapl-read = pkgs.callPackage ./rapl-read {};
   raw-to-img = pkgs.callPackage ./raw-to-img {};
+  statix = pkgs.callPackage ./statix {};
 }
 
