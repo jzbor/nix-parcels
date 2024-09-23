@@ -18,6 +18,5 @@ craneLibStatic.buildPackage rec {
     description = "Scan Nix files for dead code";
     homepage = "https://github.com/astro/deadnix";
     license = licenses.gpl3;
-    maintainers = [ maintainers.jzbor ];
   };
 }

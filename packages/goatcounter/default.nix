@@ -26,6 +26,5 @@ buildGoModule rec {
     description = "Privacy-focused, self-hosted web analytics";
     homepage = "https://www.goatcounter.com/";
     license = licenses.mit;
-    maintainers = with maintainers; [ cfeeley ];
   };
 }

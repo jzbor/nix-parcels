@@ -15,7 +15,6 @@ stdenv.mkDerivation rec {
     description = "My basic personal terminal emulator based on VTE";
     homepage = "https://github.com/jzbor/buttermilk";
     license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 
   nativeBuildInputs = with pkgs; [

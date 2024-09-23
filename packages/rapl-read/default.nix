@@ -15,7 +15,6 @@ stdenv.mkDerivation {
     description = "Quick hack showing RAPL read functionality.";
     homepage = "https://github.com/deater/uarch-configure";
     license = licenses.gpl2;
-    maintainers = [ maintainers.jzbor ];
   };
 
   nativeBuildInputs = with pkgs; [

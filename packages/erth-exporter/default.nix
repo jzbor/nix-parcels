@@ -15,6 +15,5 @@ craneLib.buildPackage rec {
     description = "Prometheus erth-exporter";
     homepage = "https://github.com/jzbor/erth-exporter";
     # license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 }

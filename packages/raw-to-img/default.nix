@@ -15,6 +15,5 @@ craneLib.buildPackage rec {
     description = "Converts raw image files produced by cameras into regular image files. Also works recursively on whole file trees instead of just a single folder or image.";
     homepage = "https://github.com/jzbor/raw-to-img";
     license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 }

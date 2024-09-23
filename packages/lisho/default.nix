@@ -15,6 +15,5 @@ craneLib.buildPackage rec {
     description = "A simple personal link shortener with no external dependencies.";
     homepage = "https://github.com/jzbor/lisho";
     license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 }

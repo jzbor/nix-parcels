@@ -15,7 +15,6 @@ stdenv.mkDerivation rec {
     description = "A desktop manager for modular Linux desktop setups.";
     homepage = "https://github.com/jzbor/pademelon";
     license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 
   nativeBuildInputs = with pkgs; [

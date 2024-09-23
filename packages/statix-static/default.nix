@@ -18,6 +18,5 @@ craneLibStatic.buildPackage rec {
     description = "lints and suggestions for the nix programming language";
     homepage = "https://github.com/oppiliappan/statix";
     license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 }

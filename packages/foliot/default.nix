@@ -26,6 +26,5 @@ craneLib.buildPackage rec {
     description = "A simple time tracking tool to keep track of your working or studying time.";
     homepage = "https://github.com/jzbor/foliot";
     license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 }

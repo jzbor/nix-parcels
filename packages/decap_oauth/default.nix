@@ -22,6 +22,5 @@ rustPlatform.buildRustPackage rec {
     description = "External OAuth provider for Decap CMS.";
     homepage = "https://github.com/augustogunsch/decap_oauth";
     license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 }

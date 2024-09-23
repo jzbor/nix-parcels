@@ -23,6 +23,5 @@ craneLib.buildPackage rec {
     description = "A terminal client for Miniflux RSS reader";
     homepage = "https://github.com/spencerwi/cliflux";
     license = licenses.mit;
-    maintainers = [ maintainers.jzbor ];
   };
 }
