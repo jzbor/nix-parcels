@@ -1,6 +1,6 @@
-{ lib, stdenv, fetchFromGitHub, ... }:
+{ lib, stdenvNoCC, fetchFromGitHub, ... }:
 
-stdenv.mkDerivation rec {
+stdenvNoCC.mkDerivation rec {
   pname = "everforest-gtk-theme";
   version = "";
 

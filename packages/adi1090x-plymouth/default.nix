@@ -1,6 +1,6 @@
-{ pkgs, fetchFromGitHub, ... }:
+{ stdenvNoCC, fetchFromGitHub, ... }:
 
-pkgs.stdenv.mkDerivation {
+stdenvNoCC.mkDerivation {
   pname = "adi1090x-plymouth";
   version = "1.0";
 
@@ -10,10 +10,6 @@ pkgs.stdenv.mkDerivation {
     rev = "v1.0";
     sha256 = "sha256-e3lRgIBzDkKcWEp5yyRCzQJM6yyTjYC5XmNUZZroDuw=";
   };
-
-  buildInputs = [
-    pkgs.git
-  ];
 
   configurePhase = ''
     mkdir -p $out/share/plymouth/themes/

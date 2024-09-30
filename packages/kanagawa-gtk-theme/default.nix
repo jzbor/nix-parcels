@@ -1,5 +1,6 @@
-{ lib, stdenv, fetchFromGitHub, ... }:
-stdenv.mkDerivation rec {
+{ lib, stdenvNoCC, fetchFromGitHub, ... }:
+
+stdenvNoCC.mkDerivation rec {
   pname = "kanagawa-gtk-theme";
   version = "";
 
