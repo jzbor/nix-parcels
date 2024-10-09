@@ -1,5 +1,6 @@
 inputs: pkgs:
 let
+  inherit (pkgs) system;
   extraArgs = {
     craneLib = inputs.crane.mkLib pkgs;
   };
@@ -14,7 +15,10 @@ in {
   foliot = pkgs.callPackage ./foliot extraArgs;
   goatcounter = pkgs.callPackage ./goatcounter extraArgs;
   kanagawa-gtk-theme = pkgs.callPackage ./kanagawa-gtk-theme extraArgs;
+  lash = inputs.lash.packages.${system}.default;
   lisho = pkgs.callPackage ./lisho extraArgs;
+  marswm = inputs.marswm.packages.${system}.default;
+  inherit (inputs.marswm.packages.${system}) marswm-scripts;
   obligator = pkgs.callPackage ./obligator extraArgs;
   pademelon = pkgs.callPackage ./pademelon extraArgs;
   rapl-read = pkgs.callPackage ./rapl-read extraArgs;
