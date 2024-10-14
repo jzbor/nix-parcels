@@ -13,6 +13,7 @@ in {
   erth-exporter = pkgs.callPackage ./erth-exporter extraArgs;
   everforest-gtk-theme = pkgs.callPackage ./everforest-gtk-theme extraArgs;
   foliot = pkgs.callPackage ./foliot extraArgs;
+  gama = pkgs.callPackage ./gama extraArgs;
   goatcounter = pkgs.callPackage ./goatcounter extraArgs;
   kanagawa-gtk-theme = pkgs.callPackage ./kanagawa-gtk-theme extraArgs;
   lash = inputs.lash.packages.${system}.default;
