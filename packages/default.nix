@@ -20,6 +20,7 @@ in {
   lisho = pkgs.callPackage ./lisho extraArgs;
   marswm = inputs.marswm.packages.${system}.default;
   inherit (inputs.marswm.packages.${system}) marswm-scripts;
+  neonmodem = pkgs.callPackage ./neonmodem extraArgs;
   obligator = pkgs.callPackage ./obligator extraArgs;
   pademelon = pkgs.callPackage ./pademelon extraArgs;
   rapl-read = pkgs.callPackage ./rapl-read extraArgs;
