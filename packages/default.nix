@@ -2,6 +2,7 @@ inputs: pkgs:
 let
   inherit (pkgs) system;
   extraArgs = {
+    inherit inputs;
     craneLib = inputs.crane.mkLib pkgs;
   };
 in {
@@ -25,5 +26,6 @@ in {
   pademelon = pkgs.callPackage ./pademelon extraArgs;
   rapl-read = pkgs.callPackage ./rapl-read extraArgs;
   raw-to-img = pkgs.callPackage ./raw-to-img extraArgs;
+  typst-packages = pkgs.callPackage ./typst-packages extraArgs;
 }
 

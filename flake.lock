@@ -102,7 +102,8 @@
         "lash": "lash",
         "marswm": "marswm",
         "nixpkgs": "nixpkgs",
-        "rust-overlay": "rust-overlay"
+        "rust-overlay": "rust-overlay",
+        "typst-packages": "typst-packages"
       }
     },
     "rust-overlay": {
@@ -122,6 +123,22 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "typst-packages": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729608754,
+        "narHash": "sha256-iJkICZYj4BcRAHfXbXcYyLh3RO+oyICR1eMOXWyWufU=",
+        "owner": "typst",
+        "repo": "packages",
+        "rev": "8feafc65720edaf3a85105c3cb94c9ab039925c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "typst",
+        "repo": "packages",
         "type": "github"
       }
     }

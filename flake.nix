@@ -31,6 +31,11 @@
         nixpkgs.follows = "nixpkgs";
       };
     };
+
+    typst-packages = {
+      url = "github:typst/packages";
+      flake = false;
+    };
   };
 
 
