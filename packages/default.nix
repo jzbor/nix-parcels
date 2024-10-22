@@ -1,4 +1,5 @@
 inputs: pkgs:
+
 let
   inherit (pkgs) system;
   extraArgs = {
@@ -26,6 +27,7 @@ in {
   pademelon = pkgs.callPackage ./pademelon extraArgs;
   rapl-read = pkgs.callPackage ./rapl-read extraArgs;
   raw-to-img = pkgs.callPackage ./raw-to-img extraArgs;
-  typst-packages = pkgs.callPackage ./typst-packages extraArgs;
+  typstPackagesAll = pkgs.callPackage ./typst-packages extraArgs;  # see also typstPackages output
+  typstPackagesSrc = pkgs.callPackage ./typst-packages/source.nix extraArgs;  # extra package for use in update-packages.sh
 }
 
