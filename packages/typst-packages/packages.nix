@@ -24,8 +24,8 @@ in packages // {
     paths = attrValues packages;
   };
   src = inputs.typst-packages.outPath;
-  withPackages = f: pkgs.symlinkJoin ({
+  withPackages = f: pkgs.symlinkJoin {
     name = "typst-package-env";
     paths = f packages;
-  });
+  };
 }
