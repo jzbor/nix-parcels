@@ -9,8 +9,8 @@ let
     dontUnpack = true;  # for speed
     dontFixup = true;   # for speed
     installPhase = ''
-      mkdir -p "$out/typst/packages/preview"
-      cp -LR --reflink=auto --no-preserve=mode -t "$out/typst/packages/preview" "$src"/preview/${name}
+      mkdir -p "$out/preview"
+      cp -LR --reflink=auto --no-preserve=mode -t "$out/preview" "$src"/preview/${name}
     '';
 
   };
