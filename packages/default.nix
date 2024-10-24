@@ -17,6 +17,7 @@ in {
   foliot = pkgs.callPackage ./foliot extraArgs;
   gama = pkgs.callPackage ./gama extraArgs;
   goatcounter = pkgs.callPackage ./goatcounter extraArgs;
+  groffX = pkgs.callPackage ./groffX extraArgs;
   kanagawa-gtk-theme = pkgs.callPackage ./kanagawa-gtk-theme extraArgs;
   lash = inputs.lash.packages.${system}.default;
   lisho = pkgs.callPackage ./lisho extraArgs;
