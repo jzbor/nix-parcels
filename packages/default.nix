@@ -23,6 +23,7 @@ in {
   lisho = pkgs.callPackage ./lisho extraArgs;
   marswm = inputs.marswm.packages.${system}.default;
   inherit (inputs.marswm.packages.${system}) marswm-scripts;
+  marmite = pkgs.callPackage ./marmite extraArgs;
   neonmodem = pkgs.callPackage ./neonmodem extraArgs;
   nixpkgs-tracker = pkgs.callPackage ./nixpkgs-tracker extraArgs;
   obligator = pkgs.callPackage ./obligator extraArgs;
