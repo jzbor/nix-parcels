@@ -32,5 +32,6 @@ in {
   raw-to-img = pkgs.callPackage ./raw-to-img extraArgs;
   typstPackagesAll = pkgs.callPackage ./typst-packages extraArgs;  # see also typstPackages output
   typstPackagesSrc = pkgs.callPackage ./typst-packages/source.nix extraArgs;  # extra package for use in update-packages.sh
+  zizmor = pkgs.callPackage ./zizmor extraArgs;
 }
 
