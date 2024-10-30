@@ -5,7 +5,7 @@
   inputs = {
     nixpkgs.url = "nixpkgs";
     cf.url = "github:jzbor/cornflakes";
-    crane.url = "github:ipetkov/crane";
+    crane.url = "github:jzbor/crane";
 
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
