@@ -44,7 +44,7 @@
     libcf = cf.mkLib nixpkgs;
   in (libcf.flakeForDefaultSystems (system: {
     packages = import ./packages self.inputs (libcf.mkPkgs system);
-    typstPackages = import ./packages/typst-packages/packages.nix self.inputs (libcf.mkPkgs system);
+    legacyPackages = import ./packages/legacy.nix self.inputs (libcf.mkPkgs system);
   })) // {
     overlays.default = import ./overlay.nix self.inputs;
   };

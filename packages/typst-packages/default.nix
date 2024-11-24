@@ -1,1 +1,1 @@
-{ pkgs, inputs, ... }: (import ./packages.nix inputs pkgs).all
+args: (import ./packages.nix args).all
