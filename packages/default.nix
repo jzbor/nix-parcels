@@ -21,6 +21,7 @@ in {
   kanagawa-gtk-theme = pkgs.callPackage ./kanagawa-gtk-theme extraArgs;
   lash = inputs.lash.packages.${system}.default;
   lisho = pkgs.callPackage ./lisho extraArgs;
+  linux-pinenote = (pkgs.callPackage ./linuxPackages-pinenote extraArgs).kernel;
   marswm = inputs.marswm.packages.${system}.default;
   inherit (inputs.marswm.packages.${system}) marswm-scripts;
   millet = pkgs.callPackage ./millet extraArgs;
