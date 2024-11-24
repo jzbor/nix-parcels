@@ -1,1 +1,1 @@
-args: (import ./packages.nix args).all
+{ pkgs, ... }@args: (import ./packages.nix args).all

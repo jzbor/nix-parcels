@@ -12,7 +12,6 @@ let
       mkdir -p "$out/preview"
       cp -LR --reflink=auto --no-preserve=mode -t "$out/preview" "$src"/preview/${name}
     '';
-
   };
   packages = listToAttrs (map (name: {
     inherit name;
@@ -23,7 +22,7 @@ in packages // {
     name = "typst-packages";
     paths = attrValues packages;
   };
-  src = inputs.typst-packages.outPath;
+  src = inputs.typst-packages;
   withPackages = f: pkgs.symlinkJoin {
     name = "typst-package-env";
     paths = f packages;
