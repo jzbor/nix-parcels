@@ -28,6 +28,7 @@ in {
   nixpkgs-tracker = pkgs.callPackage ./nixpkgs-tracker extraArgs;
   obligator = pkgs.callPackage ./obligator extraArgs;
   pademelon = pkgs.callPackage ./pademelon extraArgs;
+  pinenote_dbus_service = pkgs.callPackage ./pinenote_dbus_service extraArgs;
   rapl-read = pkgs.callPackage ./rapl-read extraArgs;
   raw-to-img = pkgs.callPackage ./raw-to-img extraArgs;
   typstPackagesAll = pkgs.callPackage ./typst-packages extraArgs;  # see also typstPackages output
