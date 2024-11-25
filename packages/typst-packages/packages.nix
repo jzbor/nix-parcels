@@ -4,7 +4,7 @@ with builtins;
 let
   mkTypstPkg = name: pkgs.stdenvNoCC.mkDerivation {
     name = "typst-package-${name}";
-    src = inputs.typst-packages;
+    src = pkgs.callPackage ./source.nix { inherit inputs; };
     dontBuild = true;
     dontUnpack = true;  # for speed
     dontFixup = true;   # for speed
@@ -22,7 +22,7 @@ in packages // {
     name = "typst-packages";
     paths = attrValues packages;
   };
-  src = inputs.typst-packages;
+  src = pkgs.callPackage ./source.nix { inherit inputs; };
   withPackages = f: pkgs.symlinkJoin {
     name = "typst-package-env";
     paths = f packages;

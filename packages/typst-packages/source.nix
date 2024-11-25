@@ -1,4 +1,11 @@
-{ inputs, pkgs, ...}: pkgs.symlinkJoin {
-  name = "typst-packages-source";
-  paths = [ inputs.typst-packages.outPath ];
+{ pkgs, ...}:
+
+let
+  inherit ((builtins.fromJSON (builtins.readFile ../../flake.lock)).nodes.typst-packages) locked;
+in pkgs.fetchFromGitHub
+  {
+  owner = "typst";
+  repo = "packages";
+  inherit (locked) rev;
+  sha256 = locked.narHash;
 }
