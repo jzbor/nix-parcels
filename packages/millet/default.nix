@@ -13,6 +13,8 @@ craneLib.buildPackage rec {
     sha256 = "sha256-nj/ueMQSAqdcAG5jaSZBOHd4D4l7xD3i+LO9MUYsz0c=";
   };
 
+  patches = [ ./cargo-config.patch ];
+
   meta = with lib; {
     description = "A language server for Standard ML.";
     homepage = "https://github.com/azdavis/millet";
