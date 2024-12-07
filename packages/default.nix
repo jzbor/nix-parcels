@@ -8,6 +8,7 @@ let
   };
 in {
   adi1090x-plymouth = pkgs.callPackage ./adi1090x-plymouth extraArgs;
+  aoc-cli = pkgs.callPackage ./aoc-cli extraArgs;
   buttermilk = pkgs.callPackage ./buttermilk extraArgs;
   chordpro = pkgs.callPackage ./chordpro extraArgs;
   cliflux = pkgs.callPackage ./cliflux extraArgs;
