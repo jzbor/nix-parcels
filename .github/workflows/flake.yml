@@ -9,7 +9,7 @@ jobs:
     with:
       binary-cache: true
       architectures: '[ "x86_64-linux", "aarch64-linux" ]'
-      blocklist: '[ "aarch64-linux.aoc-cli" ]'
+      blocklist: '[ "aarch64-linux.aoc-cli", "aarch64-linux.ghostty" ]'
     secrets:
       ATTIC_ENDPOINT: ${{ secrets.ATTIC_ENDPOINT }}
       ATTIC_CACHE: ${{ secrets.ATTIC_CACHE }}

@@ -17,6 +17,7 @@ in {
   everforest-gtk-theme = pkgs.callPackage ./everforest-gtk-theme extraArgs;
   foliot = pkgs.callPackage ./foliot extraArgs;
   gama = pkgs.callPackage ./gama extraArgs;
+  ghostty = pkgs.callPackage ./ghostty extraArgs;
   goatcounter = pkgs.callPackage ./goatcounter extraArgs;
   groffX11 = pkgs.callPackage ./groffX11 extraArgs;
   kanagawa-gtk-theme = pkgs.callPackage ./kanagawa-gtk-theme extraArgs;
