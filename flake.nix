@@ -3,7 +3,7 @@
 
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     cf.url = "github:jzbor/cornflakes";
     crane.url = "github:ipetkov/crane";
 
