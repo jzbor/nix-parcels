@@ -2,6 +2,17 @@ name: flake
 
 on:
   push:
+    branches:
+      - '*'
+      - '!update_flake_lock_action'
+  workflow_call:
+    secrets:
+      ATTIC_ENDPOINT:
+        required: false
+      ATTIC_TOKEN:
+        required: false
+      ATTIC_CACHE:
+        required: false
 
 jobs:
   call:
@@ -14,4 +25,3 @@ jobs:
       ATTIC_ENDPOINT: ${{ secrets.ATTIC_ENDPOINT }}
       ATTIC_CACHE: ${{ secrets.ATTIC_CACHE }}
       ATTIC_TOKEN: ${{ secrets.ATTIC_TOKEN }}
-

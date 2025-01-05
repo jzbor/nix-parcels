@@ -1,0 +1,25 @@
+name: flake-nightly
+
+on:
+  push:
+
+jobs:
+  call:
+    uses: ./.github/workflows/flake.yml
+    secrets:
+      ATTIC_ENDPOINT: ${{ secrets.ATTIC_ENDPOINT }}
+      ATTIC_CACHE: ${{ secrets.ATTIC_CACHE }}
+      ATTIC_TOKEN: ${{ secrets.ATTIC_TOKEN }}
+
+  push:
+    needs: [call]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Push to "nightly"
+        run: |
+          git checkout update_flake_lock_action
+          git checkout -B nightly
+          git push --set-upstream origin nightly
+
