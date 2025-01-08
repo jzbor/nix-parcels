@@ -2,13 +2,13 @@
 
 craneLib.buildPackage rec {
   pname = "raw-to-img";
-  version = "0.3.3";
+  version = "0.3.4";
 
   src = craneLib.cleanCargoSource (fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = version;
-    sha256 = "sha256-3wGBwTO/ZuEoZ3U3VlEGzdUlIHrT6uLqO/AO5jljxgk=";
+    sha256 = "sha256-7MBiJsLGXLloAeni03DzJi3XVlg8LrbLgD+ob1p7Dk4=";
   });
 
   meta = with lib; {
