@@ -2,13 +2,13 @@
 
 craneLib.buildPackage rec {
   pname = "erth-exporter";
-  version = "0.3.3";
+  version = "0.3.4";
 
   src = craneLib.cleanCargoSource (fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-Iwz/bsw4qbavYgvMqDEfqqC/H9ZMF+Dspl9zajzAh4I=";
+    sha256 = "sha256-IhJTuMmbkH0hL70Ot7KkwY9155lQx82/sRxtwsHs+u0=";
   });
 
   meta = {
