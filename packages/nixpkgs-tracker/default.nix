@@ -7,8 +7,8 @@ pkgs.stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "ocfox";
     repo = pname;
-    rev = "f0e3bf22da5510f1a1fabf8b8fd38de119927700";
-    sha256 = "sha256-tzmXIUbznP6sW++IBNONncPTweDr9WM+N+vfGlj74qs=";
+    rev = "e9394c41c207e26b66bda737591b700e3f545782";
+    sha256 = "sha256-7pNN+ZAl2Aj5HEG1rzAJFCBtFc2VAwC9NxyCajb18qg=";
   };
 
   pnpmDeps = pnpm.fetchDeps {
@@ -24,11 +24,11 @@ pkgs.stdenv.mkDerivation rec {
   buildPhase = "pnpm build";
 
   installPhase = ''
-              runHook preInstall
+    runHook preInstall
 
-              mkdir $out
-              mv dist/* $out
+    mkdir $out
+    mv dist/* $out
 
-              runHook postInstall
+    runHook postInstall
   '';
 }
