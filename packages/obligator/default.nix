@@ -16,7 +16,7 @@ buildGoModule {
   # buildInputs = with pkgs; [ sqlite ];
 
   # Enable CGO if SQLite support is required.
-  CGO_ENABLED = "1";
+  env.CGO_ENABLED = "1";
 
   meta = with lib; {
     description = "Simple and opinionated OpenID Connect server designed for self-hosters";
