@@ -7,13 +7,13 @@ pkgs.stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "ocfox";
     repo = pname;
-    rev = "e9394c41c207e26b66bda737591b700e3f545782";
+    rev = "3f63d55ae90c92db8fb0b5efa2b205a79bce2360";
     sha256 = "sha256-7pNN+ZAl2Aj5HEG1rzAJFCBtFc2VAwC9NxyCajb18qg=";
   };
 
   pnpmDeps = pnpm.fetchDeps {
     inherit pname version src;
-    hash = "sha256-zeSy2HwF0pBXmPRyjDkg2KpDE5sOU3auDLNk2vQ3sdk=";
+    hash = "sha256-oYrt0qoVJjc1KiXORkCEvNnqcB9wWj4KX8Q60AQ72r0=";
   };
 
   nativeBuildInputs = with pkgs; [
