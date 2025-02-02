@@ -18,7 +18,7 @@ buildGoModule rec {
   buildInputs = with pkgs; [ postgresql sqlite ];
 
   # Enable CGO if SQLite support is required.
-  env.CGO_ENABLED = "1";
+  CGO_ENABLED = "1";
   # Set version.
   ldflags = [ "-X zgo.at/goatcounter/v2.Version=${version}" ];
 
