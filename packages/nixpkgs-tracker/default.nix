@@ -1,6 +1,8 @@
-{ pkgs, pnpm, fetchFromGitHub, ... }:
+{ pkgs, fetchFromGitHub, ... }:
 
-pkgs.stdenv.mkDerivation rec {
+let
+  pnpm = pkgs.pnpm_9;
+in pkgs.stdenv.mkDerivation rec {
   pname = "nixpkgs-tracker";
   version = "unstable-2024-10-29";
 
