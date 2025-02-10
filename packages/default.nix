@@ -27,6 +27,7 @@ in {
   marmite = pkgs.callPackage ./marmite extraArgs;
   millet = pkgs.callPackage ./millet extraArgs;
   neonmodem = pkgs.callPackage ./neonmodem extraArgs;
+  nix-sweep = pkgs.callPackage ./nix-sweep extraArgs;
   nixpkgs-tracker = pkgs.callPackage ./nixpkgs-tracker extraArgs;
   obligator = pkgs.callPackage ./obligator extraArgs;
   pademelon = pkgs.callPackage ./pademelon extraArgs;
