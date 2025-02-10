@@ -43,8 +43,8 @@
   let
     libcf = cf.mkLib nixpkgs;
   in (libcf.flakeForDefaultSystems (system: {
-    packages = import ./packages self.inputs (libcf.mkPkgs system);
-    legacyPackages = import ./packages/legacy.nix self.inputs (libcf.mkPkgs system);
+    packages = import ./packages self.inputs (libcf.mkPkgs nixpkgs system);
+    legacyPackages = import ./packages/legacy.nix self.inputs (libcf.mkPkgs nixpkgs system);
   })) // {
     overlays.default = import ./overlay.nix self.inputs;
   };
