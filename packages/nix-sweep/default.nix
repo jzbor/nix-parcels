@@ -2,13 +2,13 @@
 
 craneLib.buildPackage rec {
   pname = "nix-sweep";
-  version = "0.1.1";
+  version = "0.1.2";
 
   src = fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-hpg900Dez9dKwIensszKyFOXk3xem78rdBkC74era8A=";
+    sha256 = "sha256-fzUla8zJUJzaakfDj6rKQvf1tkW/NJisd7pJlRMyV/c=";
   };
 
   meta = with lib; {
