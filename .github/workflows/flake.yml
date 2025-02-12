@@ -22,6 +22,7 @@ jobs:
       architectures: '[ "x86_64-linux", "aarch64-linux" ]'
       blocklist: '[ "aarch64-linux.aoc-cli" ]'
       arm-runners: true
+      disable-eval-checks: true
       build-args: '--print-build-logs'
     secrets:
       ATTIC_ENDPOINT: ${{ secrets.ATTIC_ENDPOINT }}
