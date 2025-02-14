@@ -20,7 +20,7 @@ jobs:
     with:
       binary-cache: true
       architectures: '[ "x86_64-linux", "aarch64-linux" ]'
-      blocklist: '[ "aarch64-linux.aoc-cli" ]'
+      blocklist: '[ "packages.aarch64-linux.aoc-cli" ]'
       arm-runners: true
       disable-eval-checks: true
       build-args: '--print-build-logs'
