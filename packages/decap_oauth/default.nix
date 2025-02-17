@@ -8,9 +8,9 @@ rustPlatform.buildRustPackage rec {
   nativeBuildInputs = with pkgs; [ pkg-config ];
 
   src = fetchFromGitHub {
-    owner = "jzbor";
+    owner = "augustogunsch";
     repo = pname;
-    rev = "d1fe0f28e091bfb239fd2124034ce033dc99259c";  #TODO switch to mainline once PR is merged: https://github.com/augustogunsch/decap_oauth/pull/1
+    rev = "adc8bedb3b9077f0b6a0ee8b5037302a2318295d";
     sha256 = "sha256-+u88zI53rbllZ0MDKC6FW963hw2j2ShnQXPw9fArzg8=";
   };
 
