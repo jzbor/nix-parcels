@@ -1,0 +1,26 @@
+name: flake-unstable-updated
+
+on:
+  push:
+    branches: [update_flake_lock_action]
+
+jobs:
+  flake:
+    uses: ./.github/workflows/flake.yml
+    secrets:
+      ATTIC_ENDPOINT: ${{ secrets.ATTIC_ENDPOINT }}
+      ATTIC_CACHE: ${{ secrets.ATTIC_CACHE }}
+      ATTIC_TOKEN: ${{ secrets.ATTIC_TOKEN }}
+
+  push:
+    needs: [flake]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Push to "unstable-updated"
+        run: |
+          git checkout origin/update_flake_lock_action
+          git checkout -B unstable-updated
+          git push --force --set-upstream origin unstable-updated
+

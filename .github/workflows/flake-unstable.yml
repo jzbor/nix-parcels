@@ -1,8 +1,8 @@
-name: flake-nightly
+name: flake-unstable
 
 on:
   push:
-    branches: [update_flake_lock_action]
+    branches: [master]
 
 jobs:
   flake:
@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Push to "nightly"
+        uses: actions/checkout@v4
+      - name: Push to "unstable"
         run: |
           git checkout origin/update_flake_lock_action
-          git checkout -B nightly
-          git push --force --set-upstream origin nightly
+          git checkout -B unstable
+          git push --force --set-upstream origin unstable
 

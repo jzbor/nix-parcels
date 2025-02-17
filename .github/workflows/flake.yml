@@ -5,6 +5,7 @@ on:
     branches:
       - '*'
       - '!update_flake_lock_action'
+      - '!master'
   workflow_call:
     secrets:
       ATTIC_ENDPOINT:
