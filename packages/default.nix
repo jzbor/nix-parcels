@@ -24,7 +24,6 @@ in {
   lisho = pkgs.callPackage ./lisho extraArgs;
   marswm = inputs.marswm.packages.${system}.default;
   inherit (inputs.marswm.packages.${system}) marswm-scripts;
-  marmite = pkgs.callPackage ./marmite extraArgs;
   millet = pkgs.callPackage ./millet extraArgs;
   neonmodem = pkgs.callPackage ./neonmodem extraArgs;
   nix-sweep = pkgs.callPackage ./nix-sweep extraArgs;
