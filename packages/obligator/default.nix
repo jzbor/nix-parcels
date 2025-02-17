@@ -1,4 +1,3 @@
-# source: https://github.com/connorfeeley/goatcounter-flake
 { lib, buildGoModule, fetchFromGitHub, ... }:
 
 buildGoModule rec {
