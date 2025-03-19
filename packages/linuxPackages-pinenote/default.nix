@@ -1,7 +1,7 @@
 { pkgs, fetchFromGitHub, ... }:
 
 pkgs.linuxPackagesFor (pkgs.linuxKernel.kernels.linux_6_12.override {
-  argsOverride = {
+  argsOverride = rec {
     src = fetchFromGitHub {
       owner = "m-weigand";
       repo = "linux";
@@ -10,5 +10,6 @@ pkgs.linuxPackagesFor (pkgs.linuxKernel.kernels.linux_6_12.override {
     };
     version = "6.12.0-rc3";
     modDirVersion = "6.12.0-rc3";
+    configfile = src + /arch/arm64/configs/pinenote_defconfig;
   };
 })

@@ -21,6 +21,7 @@ in {
   groffX11 = pkgs.callPackage ./groffX11 extraArgs;
   kanagawa-gtk-theme = pkgs.callPackage ./kanagawa-gtk-theme extraArgs;
   lash = inputs.lash.packages.${system}.default;
+  linuxPackages-pinenote-kernel = (pkgs.callPackage ./linuxPackages-pinenote extraArgs).kernel;
   lisho = pkgs.callPackage ./lisho extraArgs;
   marswm = inputs.marswm.packages.${system}.default;
   inherit (inputs.marswm.packages.${system}) marswm-scripts;
