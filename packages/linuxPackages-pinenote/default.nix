@@ -10,6 +10,6 @@ pkgs.linuxPackagesFor (pkgs.linuxKernel.kernels.linux_6_12.override {
     };
     version = "6.12.0-rc3";
     modDirVersion = "6.12.0-rc3";
-    configfile = src + /arch/arm64/configs/pinenote_defconfig;
+    configfile = src + /arch/arm64/configs/pinenote_defconfig;  # TODO vendor if it slows eval down too much
   };
 })
