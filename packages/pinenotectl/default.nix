@@ -2,13 +2,13 @@
 
 craneLib.buildPackage rec {
   pname = "pinenotectl";
-  version = "0.1.0";
+  version = "0.2.0";
 
   src = craneLib.cleanCargoSource (fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = "v" + version;
-    sha256 = "sha256-iBVrh4Bj5qVm5sii+yJ2QgHmd6VOheQqXtvpXSENbe0=";
+    sha256 = "sha256-W59tsU2PmnT/LFTg20hQcdu5Smy1BWnS+9NtDkScZ10=";
   });
 
   meta = with lib; {
