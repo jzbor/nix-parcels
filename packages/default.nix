@@ -31,6 +31,7 @@ in {
   pademelon = pkgs.callPackage ./pademelon extraArgs;
   peanutbutter = pkgs.callPackage ./peanutbutter extraArgs;
   pinenote_dbus_service = pkgs.callPackage ./pinenote_dbus_service extraArgs;
+  pinenotectl = pkgs.callPackage ./pinenotectl extraArgs;
   rapl-read = pkgs.callPackage ./rapl-read extraArgs;
   raw-to-img = pkgs.callPackage ./raw-to-img extraArgs;
   typstPackagesAll = pkgs.callPackage ./typst-packages extraArgs;  # see also typstPackages output
