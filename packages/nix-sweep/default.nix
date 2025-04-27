@@ -2,17 +2,17 @@
 
 craneLib.buildPackage rec {
   pname = "nix-sweep";
-  version = "0.1.7";
+  version = "0.2.0";
 
   src = fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-uXeEGvFtmPrLmFxK1TQMxfOKr2WXf7Co4C0H+0pNSQ4=";
+    sha256 = "sha256-l4YkhrUsWzKIwry9+eIdN8uUJltOYpJGjBOEoDzFRPY=";
   };
 
   meta = with lib; {
-    description = "Utility to clean up old Nix profile generations";
+    description = "Utility to clean up old Nix profile generations and gc roots";
     homepage = "https://github.com/jzbor/nix-sweep";
     license = licenses.mit;
   };
