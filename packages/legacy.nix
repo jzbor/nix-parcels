@@ -8,5 +8,6 @@ let
 in {
   typstPackages = pkgs.callPackage ./typst-packages/packages.nix extraArgs;
   linuxPackages-pinenote = pkgs.callPackage ./linuxPackages-pinenote extraArgs;
+  linuxPackages-pinenote-hrdl = pkgs.callPackage ./linuxPackages-pinenote extraArgs;
 }
 
