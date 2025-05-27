@@ -1,15 +1,36 @@
-{ lib, craneLib, fetchFromGitHub, ... }:
+{ pkgs, lib, craneLib, fetchFromGitHub, ... }:
 
 craneLib.buildPackage rec {
   pname = "nix-sweep";
-  version = "0.2.2";
+  version = "0.4.0";
+  strictDeps = true;
 
   src = fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-ygx5FTL5A5FbG/c2WWH6AWdrYqwsLVL+9kar2Wz/0jo=";
+    sha256 = "sha256-51mkkPZvl42TXYzePsRoLIJlHv6PkIXjynXJPvPdmRM=";
   };
+
+  cargoArtifacts = craneLib.buildDepsOnly {
+    inherit src strictDeps;
+  };
+
+  nativeBuildInputs = with pkgs; [
+    makeWrapper
+    installShellFiles
+  ];
+
+  postFixup = ''
+    wrapProgram $out/bin/nix-sweep \
+    --set PATH ${pkgs.lib.makeBinPath [ pkgs.nix ]}
+  '';
+
+  postInstall = ''
+    mkdir ./manpages
+    $out/bin/nix-sweep man ./manpages
+    installManPage ./manpages/*
+  '';
 
   meta = with lib; {
     description = "Utility to clean up old Nix profile generations and left-over garbage collection roots";
