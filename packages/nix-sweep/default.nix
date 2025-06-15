@@ -2,14 +2,14 @@
 
 craneLib.buildPackage rec {
   pname = "nix-sweep";
-  version = "0.4.0";
+  version = "0.5.0";
   strictDeps = true;
 
   src = fetchFromGitHub {
     owner = "jzbor";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-51mkkPZvl42TXYzePsRoLIJlHv6PkIXjynXJPvPdmRM=";
+    sha256 = "sha256-jVmFGYwktnuEAeaO3rJUYJL5W40gMiIU07ZjQUKMNKk=";
   };
 
   cargoArtifacts = craneLib.buildDepsOnly {
