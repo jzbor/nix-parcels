@@ -8,12 +8,11 @@ pkgs.perlPackages.buildPerlPackage {
     hash = "sha256-SqTkbR2bWIMcU5gSRf2WW6s1ckHtJVPkxj/bBO9X4kM=";
   };
   buildInputs = with pkgs.pkgs.perlPackages; [ PodParser ];
-  propagatedBuildInputs = with pkgs.pkgs.perlPackages; [ AppPackager FileLoadLines IOString ImageInfo PDFAPI2 StringInterpolateNamed TextLayout ]
-  ++ pkgs.lib.optionals (!pkgs.stdenv.isDarwin) [ Wx ];
-  nativeBuildInputs = pkgs.lib.optional pkgs.stdenv.isDarwin pkgs.shortenPerlShebang;
-  postInstall = pkgs.lib.optionalString pkgs.stdenv.isDarwin ''
+  propagatedBuildInputs = with pkgs.pkgs.perlPackages; [ AppPackager FileLoadLines IOString ImageInfo PDFAPI2 StringInterpolateNamed TextLayout ];
+  nativeBuildInputs = [ pkgs.shortenPerlShebang ];
+  postInstall = ''
       shortenPerlShebang $out/bin/chordpro
-      rm $out/bin/wxchordpro # Wx not supported on darwin
+      rm $out/bin/wxchordpro # Wx not supported in this build
   '';
   meta = {
     description = "A lyrics and chords formatting program";
