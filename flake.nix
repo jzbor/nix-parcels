@@ -4,7 +4,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-chordpro.url = "github:nixos/nixpkgs/658e7223191d2598641d50ee4e898126768fe847";
 
     cf = {
       url = "github:jzbor/cornflakes";
