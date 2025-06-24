@@ -1,15 +1,15 @@
-{ pkgs, fetchFromGitHub, ... }:
+{ pkgs, fetchFromSourcehut, ... }:
 
-pkgs.linuxPackagesFor (pkgs.linuxKernel.kernels.linux_6_12.override {
+pkgs.linuxPackagesFor (pkgs.linuxKernel.kernels.linux_6_15.override {
   argsOverride = rec {
-    src = fetchFromGitHub {
-      owner = "m-weigand";
+    src = fetchFromSourcehut {
+      owner = "~hrdl";
       repo = "linux";
-      rev = "branch_pinenote_6-12_v1";
-      sha256 = "sha256-wiYKBqH3bWswxsdyVF9nXQ3hwXUuxDdKMUORTVZrDc0=";
+      rev = "v6.15-rc3";
+      sha256 = "sha256-wcReSz4PryusANbjMQylnzHXMgmKZ+s4+L57gpEayF0=";
     };
-    version = "6.12.0";
-    modDirVersion = "6.12.0";
+    version = "6.15.0-rc3";
+    modDirVersion = "6.15.0-rc3";
     config = builtins.readFile "${src}/arch/arm64/configs/pinenote_defconfig";
   };
 })
