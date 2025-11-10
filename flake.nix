@@ -4,14 +4,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
-    cf = {
-      url = "github:jzbor/cornflakes";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
+    cf.url = "github:jzbor/cornflakes";
     crane.url = "github:ipetkov/crane";
-
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -1,4 +1,4 @@
-{ lib, stdenv, fetchFromGitHub, pkgs, wrapGAppsHook, python3, ... }:
+{ lib, stdenv, fetchFromGitHub, pkgs, python3, ... }:
 
 stdenv.mkDerivation rec {
   pname = "pademelon";
@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = with pkgs; [
     gobject-introspection
     pkg-config
-    wrapGAppsHook
+    wrapGAppsHook3
   ];
 
   buildInputs = with pkgs; [
