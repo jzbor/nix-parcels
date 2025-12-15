@@ -4,19 +4,19 @@ let
   pnpm = pkgs.pnpm_9;
 in pkgs.stdenv.mkDerivation rec {
   pname = "nixpkgs-tracker";
-  version = "unstable-2024-10-29";
+  version = "unstable-2025-11-27";
 
   src = fetchFromGitHub {
     owner = "ocfox";
     repo = pname;
-    rev = "3f63d55ae90c92db8fb0b5efa2b205a79bce2360";
-    sha256 = "sha256-7pNN+ZAl2Aj5HEG1rzAJFCBtFc2VAwC9NxyCajb18qg=";
+    rev = "ef954010622c0c82815f73df21c59c18d2c798a6";
+    sha256 = "sha256-+kGgkDCndmowDOzvgXFMtiAhrXKJvmqsw9l1kWvciao=";
   };
 
   pnpmDeps = pnpm.fetchDeps {
     inherit pname version src;
     fetcherVersion = 1;
-    hash = "sha256-oYrt0qoVJjc1KiXORkCEvNnqcB9wWj4KX8Q60AQ72r0=";
+    hash = "sha256-1cfVyJz0cjOYd+Rs5aVsWkco4iBeJLwg9NvosKh6+jA=";
   };
 
   nativeBuildInputs = with pkgs; [
