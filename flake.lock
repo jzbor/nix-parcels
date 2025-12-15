@@ -132,11 +132,11 @@
     "typst-packages": {
       "flake": false,
       "locked": {
-        "lastModified": 1765796958,
-        "narHash": "sha256-lChU+aPYcNzBo3MCxwVmOW2A4Ukf78MfteVxDXmHRhs=",
+        "lastModified": 1765811093,
+        "narHash": "sha256-y9uXh+5njYqxC0wXMPZ/djUzEQ5Y2dLvwF0mLF1e17s=",
         "owner": "typst",
         "repo": "packages",
-        "rev": "47811c99429eb4bccbf07b442dbd8ffef38a7ec7",
+        "rev": "d40438b615f42ebf438c9409395cc45088b8a39a",
         "type": "github"
       },
       "original": {
