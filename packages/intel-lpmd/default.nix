@@ -35,8 +35,19 @@ stdenv.mkDerivation rec {
     man-db
   ];
 
+  patchPhase = ''
+    sed -i '30,34d' data/Makefile.am
+  '';
+
   configureFlags = [
     "--with-dbus-sys-dir=$out/share/dbus-1/system-services/"
     "--without-systemdsystemunitdir"
+    "--localstatedir=/var"
+    "--sysconfdir=/etc"
   ];
+
+  postInstall = ''
+    mkdir -p $out/share/dbus-1/system-services/
+    cp -v data/org.freedesktop.intel_lpmd.conf $out/share/dbus-1/system-services/
+  '';
 }
