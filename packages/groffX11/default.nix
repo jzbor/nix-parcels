@@ -10,7 +10,7 @@
 , texinfo
 , bison
 , bash
-, xorg
+, libxaw
 , ...
 }:
 
@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ autoreconfHook pkg-config texinfo ]
     # Required due to the patch that changes .ypp files.
     ++ lib.optional (stdenv.cc.isClang && lib.versionAtLeast stdenv.cc.version "9") bison;
-  buildInputs = [ perl bash xorg.libXaw ]
+  buildInputs = [ perl bash libxaw ]
     ++ lib.optionals enableGhostscript [ ghostscript gawk libX11 libXaw libXt libXmu ]
     ++ lib.optionals enableHtml [ psutils netpbm ]
     ++ lib.optionals enableIconv [ iconv ]

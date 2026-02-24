@@ -32,9 +32,9 @@ stdenv.mkDerivation rec {
     libcanberra
     power-profiles-daemon
     python3
-    xorg.libX11
-    xorg.libXi
-    xorg.libXrandr
+    libx11
+    libxi
+    libxrandr
     libappindicator
   ];
 
