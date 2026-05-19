@@ -17,6 +17,7 @@ in {
   decap_oauth = pkgs.callPackage ./decap_oauth extraArgs;
   erth-exporter = pkgs.callPackage ./erth-exporter extraArgs;
   everforest-gtk-theme = pkgs.callPackage ./everforest-gtk-theme extraArgs;
+  evtx = pkgs.callPackage ./evtx extraArgs;
   foliot = pkgs.callPackage ./foliot extraArgs;
   gama = pkgs.callPackage ./gama extraArgs;
   groffX11 = pkgs.callPackage ./groffX11 extraArgs;
