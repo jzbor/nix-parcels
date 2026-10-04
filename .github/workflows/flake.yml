@@ -21,7 +21,7 @@ jobs:
     with:
       binary-cache: true
       architectures: '[ "x86_64-linux", "aarch64-linux" ]'
-      blocklist: '[ "packages.aarch64-linux.smlnj-rlwrapped", "packages.aarch64-linux.intel-lpmd" ]'
+      blocklist: '[ "packages.aarch64-linux.smlnj-rlwrapped", "packages.aarch64-linux.intel-lpmd", "packages.aarch64-linux.typstPackagesSrc", "packages.x86_64-linux.typstPackagesSrc"  ]'
       arm-runners: true
       disable-eval-checks: true
       build-args: '--print-build-logs'
