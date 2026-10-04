@@ -2,11 +2,11 @@
   "nodes": {
     "cf": {
       "locked": {
-        "lastModified": 1769981653,
-        "narHash": "sha256-Db95/iyyQR1zaUxWt6G03p13ZbPiqbA8P+otM6OM1KU=",
+        "lastModified": 1791144882,
+        "narHash": "sha256-XQaJj4oi+iN+6MgnYZzkIAFX1NmT1ZzPETSul5gHLPs=",
         "owner": "jzbor",
         "repo": "cornflakes",
-        "rev": "7ae7102b6b863281c7a72772a45d87409daa83d9",
+        "rev": "915033ba33142d1a6caabb79fb4edf4532cb6871",
         "type": "github"
       },
       "original": {
