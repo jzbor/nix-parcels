@@ -31,6 +31,11 @@
       };
     };
 
+    heretic-lisp = {
+      url = "git+https://codeberg.org/jzbor/heretic-lisp";
+      flake = false;
+    };
+
     typst-packages = {
       url = "github:typst/packages";
       flake = false;

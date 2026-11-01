@@ -30,6 +30,22 @@
         "type": "github"
       }
     },
+    "heretic-lisp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793496944,
+        "narHash": "sha256-JUUArjTrN0hARYNBbAprrw7sKHoCpcD9ri7m+8tjjOc=",
+        "ref": "refs/heads/main",
+        "rev": "c523bcca9c29fe51618a9a0d782bbad8cc2a04ba",
+        "revCount": 111,
+        "type": "git",
+        "url": "https://codeberg.org/jzbor/heretic-lisp"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/jzbor/heretic-lisp"
+      }
+    },
     "lash": {
       "inputs": {
         "cf": [
@@ -102,6 +118,7 @@
       "inputs": {
         "cf": "cf",
         "crane": "crane",
+        "heretic-lisp": "heretic-lisp",
         "lash": "lash",
         "marswm": "marswm",
         "nixpkgs": "nixpkgs",
