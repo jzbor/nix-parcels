@@ -2,5 +2,5 @@
 
 (import inputs.heretic-lisp {
   inherit pkgs;
-  system = pkgs.system;
+  inherit (pkgs) system;
 }).packages.default
