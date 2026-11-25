@@ -33,11 +33,11 @@
     "heretic-lisp": {
       "flake": false,
       "locked": {
-        "lastModified": 1794842423,
-        "narHash": "sha256-KBB1dFRdAy8M80ukTs5S2IKTr8W5W4EiLmlAIjMtusM=",
+        "lastModified": 1795610886,
+        "narHash": "sha256-sQ0JLhGHnVipDD4Yo5rljT4ZqKnTlnIA8VF+yowI1h8=",
         "ref": "refs/heads/main",
-        "rev": "ae86609dd2a8dad3a69ae765e26cadc17a83a319",
-        "revCount": 142,
+        "rev": "5004200a754804d709079a2e11dae60e53c60011",
+        "revCount": 150,
         "type": "git",
         "url": "https://codeberg.org/jzbor/heretic-lisp"
       },
